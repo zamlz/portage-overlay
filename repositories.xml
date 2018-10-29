@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>zamlz</name>
+    <description>A Portage Overlay for Gentoo Linux (zamlz)</description>
+    <homepage>https://gitlab.com/zamlz/portage</homepage>
+    <owner>
+      <email>zamlz@pm.me</email>
+      <name>Amlesh Sivanantham (zamlz)</name>
+    </owner>
+    <source branch="master" type="git">https://gitlab.com/zamlz/portage.git</source>
+    <feed>https://gitlab.com/zamlz/portage/commits/master?format=atom</feed>
+  </repo>
+</repositories>
