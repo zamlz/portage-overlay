@@ -4,12 +4,11 @@
   <repo priority="50" quality="experimental" status="unofficial">
     <name>zamlz</name>
     <description>A Portage Overlay for Gentoo Linux (zamlz)</description>
-    <homepage>https://gitlab.com/zamlz/portage-overlay</homepage>
+    <homepage>https://git.zamlz.org/portage-overlay.git</homepage>
     <owner>
       <email>zamlz@pm.me</email>
       <name>Amlesh Sivanantham (zamlz)</name>
     </owner>
-    <source branch="master" type="git">https://gitlab.com/zamlz/portage-overlay.git</source>
-    <feed>https://gitlab.com/zamlz/portage-overlay/commits/master?feed_token=FLED15UDx3sXyPxyPrmh&format=atom</feed>
+    <source branch="master" type="git">https://git.zamlz.org/portage-overlay.git</source>
   </repo>
 </repositories>
