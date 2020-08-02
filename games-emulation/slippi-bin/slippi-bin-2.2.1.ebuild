@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit udev
+
 PN_NB="${PN//-bin/}"
 APP_IMAGE="Slippi_Online-x86_64.AppImage"
 
@@ -30,10 +32,12 @@ S="${WORKDIR}"
 
 src_unpack()
 {
-	cp -L ${DISTDIR}/${APP_IMAGE} ${S}/${PN_NB} || die
+	cp -L "${DISTDIR}/${APP_IMAGE}" "${S}/${PN_NB}" || die
 }
 
 src_install()
 {
+	udev_dorules "${FILESDIR}/51-gcadapter.rules"
+	udev_reload
 	dobin "${PN_NB}"
 }
