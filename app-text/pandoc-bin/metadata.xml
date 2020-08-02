@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+    <maintainer type="project">
+        <email>samlesh@gmail.com</email>
+    </maintainer>
+    <longdescription>Conversion between markup formats</longdescription>
+    <use>
+        <flag name="citeproc">Build with pandoc citeproc</flag>
+    </use>
+</pkgmetadata>
