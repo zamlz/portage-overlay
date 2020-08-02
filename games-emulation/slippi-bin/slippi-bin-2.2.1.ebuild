@@ -21,13 +21,11 @@ KEYWORDS="-* amd64"
 IUSE=""
 RDEPEND=""
 RESTRICT+=" primaryuri"
-
-S="${WORKDIR}/${P_NB}"
+S="${WORKDIR}"
 
 src_unpack()
 {
-	# Renames the app image to be more generic
-	mv ${APP_IMAGE} ${PN_NB} || die
+	cp -L ${DISTDIR}/${APP_IMAGE} ${S}/${PN_NB} || die
 }
 
 src_install()
