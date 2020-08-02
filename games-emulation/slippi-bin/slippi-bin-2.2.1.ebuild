@@ -19,8 +19,13 @@ SRC_URI=(
 )
 KEYWORDS="-* amd64"
 IUSE=""
-RDEPEND=""
+RDEPEND=(
+	"sys-fs/fuse:0"
+	"app-crypt/p11-kit"
+)
+
 RESTRICT+=" primaryuri"
+
 S="${WORKDIR}"
 
 src_unpack()
