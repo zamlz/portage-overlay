@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
 <pkgmetadata>
-	<maintainer type="project">
-		<email>zamlz@pm.me</email>
-	</maintainer>
-	<longdescription>A featherweight, lemon-scented, bar based on xcb</longdescription>
+    <maintainer type="project">
+        <email>samlesh@gmail.com</email>
+    </maintainer>
+    <longdescription>A featherweight, lemon-scented, bar based on xcb</longdescription>
 </pkgmetadata>

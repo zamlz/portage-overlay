@@ -6,7 +6,7 @@
     <description>A Portage Overlay for Gentoo Linux (zamlz)</description>
     <homepage>https://github.com/zamlz/portage-overlay.git</homepage>
     <owner>
-      <email>zamlz@pm.me</email>
+      <email>samlesh@gmail.com</email>
       <name>Amlesh Sivanantham (zamlz)</name>
     </owner>
     <source branch="master" type="git">https://github.com/zamlz/portage-overlay.git</source>
