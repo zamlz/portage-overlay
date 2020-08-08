@@ -24,7 +24,7 @@ IUSE=""
 RDEPEND="sys-fs/fuse:0
 	app-crypt/p11-kit"
 
-RESTRICT+=" primaryuri"
+RESTRICT+=" mirror"
 
 S="${WORKDIR}"
 
