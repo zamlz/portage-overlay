@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'http://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+    <maintainer type="project">
+        <email>samlesh@gmail.com</email>
+    </maintainer>
+    <longdescription>st fork that uses Xresources and some pretty good patches</longdescription>
+</pkgmetadata>
