@@ -6,18 +6,22 @@ EAPI=7
 inherit udev
 
 PN_NB="${PN//-bin/}"
-APP_IMAGE="Slippi_Online-x86_64.AppImage"
+GITHUB="https://github.com/project-${PN_NB}"
+GITHUB_RELEASE="${GITHUB}/Ishiiruka/releases/download"
 
-DESCRIPTION="Slippi is a Dolphin Emulator with Rollback Netcode for Super Smash Bros. Melee"
+APP_IMAGE="Slippi_Online-x86_64.AppImage"
+APP_IMAGE_PV="${APP_IMAGE//.AppImage/}-v${PV}.AppImage"
+
+DESCRIPTION="Dolphin Emulator with Rollback Netcode for Super Smash Bros. Melee"
 HOMEPAGE=(
 	"https://slippi.gg/"
-	"https://github.com/project-slippi"
+	"${GITHUB}"
 )
 LICENSE="GPL-2"
 
 SLOT="0"
 SRC_URI=(
-	"https://github.com/project-${PN_NB}/Ishiiruka/releases/download/v${PV}/${APP_IMAGE}"
+	"${GITHUB_RELEASE}/v${PV}/${APP_IMAGE} -> ${APP_IMAGE_PV}"
 )
 KEYWORDS="-* amd64"
 IUSE=""
@@ -30,7 +34,7 @@ S="${WORKDIR}"
 
 src_unpack()
 {
-	cp -L "${DISTDIR}/${APP_IMAGE}" "${S}/${PN_NB}" || die
+	cp -L "${DISTDIR}/${APP_IMAGE_PV}" "${S}/${PN_NB}" || die
 }
 
 src_install()
